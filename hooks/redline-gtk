@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+python3 - "${1:-}" "${2:-}" <<'PYTHON'
+from pathlib import Path
+import os
+import json
+import re
+import sys
+home = Path.home()
+config = Path(os.environ.get("XDG_CONFIG_HOME", home / ".config"))
+root = Path(sys.argv[2]) if sys.argv[2] else home / ".config/omarchy/themes/redline"
+active = sys.argv[1] == "redline"
+for version in ("3.0", "4.0"):
+    target = config / ("gtk-" + version) / "gtk.css"
+    existing = target.read_text() if target.exists() else ""
+    clean = re.sub(r"/\* BEGIN REDLINE GTK \*/\n.*?/\* END REDLINE GTK \*/\n?", "", existing, flags=re.S)
+    source = root / ("gtk-" + version) / "gtk.css"
+    # Imports precede all rules, preserving the user's existing stylesheet.
+    block = "/* BEGIN REDLINE GTK */\n@import url(" + json.dumps(source.as_uri()) + ");\n/* END REDLINE GTK */\n"
+    updated = (block if active else "") + clean
+    if updated != existing:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        temporary = target.with_name("gtk.css.redline-tmp")
+        temporary.write_text(updated)
+        temporary.replace(target)
+PYTHON

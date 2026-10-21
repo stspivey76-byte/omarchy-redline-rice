@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "steven.updates",
+  "name": "Software Updates",
+  "version": "1.0.0",
+  "author": "Steven",
+  "description": "System, AUR, mise, Flatpak and firmware update counts",
+  "kinds": ["bar-widget"],
+  "entryPoints": {"barWidget": "BarWidget.qml"},
+  "barWidget": {"displayName": "Software Updates", "category": "System", "allowMultiple": false}
+}

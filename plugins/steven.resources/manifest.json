@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "steven.resources",
+  "name": "Resource Bars",
+  "version": "1.0.0",
+  "author": "Steven",
+  "description": "CPU, RAM, disk space and network activity bars",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Resource Bars",
+    "category": "System",
+    "allowMultiple": false
+  }
+}

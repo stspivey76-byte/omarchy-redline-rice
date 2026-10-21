@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "steven.spectrum",
+  "name": "Playback Spectrum",
+  "version": "1.0.0",
+  "author": "Steven",
+  "description": "Moving taskbar frequency bars that react to all playback audio",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Playback Spectrum",
+    "description": "Live spectrum of the current audio output",
+    "category": "Audio",
+    "allowMultiple": false
+  }
+}
