@@ -4,7 +4,7 @@ Steven’s Omarchy ricing bundle: **taskbar, ten shell plugins, six matching the
 
 ## Current taskbar layout
 
-The transparent top bar uses Steven’s custom audio widget (volume, output selection, and per-app mixer). Resource meters sit at the far right after power. The spectrum falls to zero when silent. The exported shell styling and plugin accents match the current red setup and are recolored by the six-color picker.
+The transparent top bar uses Steven’s custom audio widget (volume, output selection, and per-app mixer). Resource meters sit at the far right after power. The spectrum falls to zero when silent. The software-update widget appears only when updates are available and takes no bar space when hidden. The exported shell styling and plugin accents match the current red setup and are recolored by the six-color picker.
 
 Left: workspaces, active window, spectrum, media. Center: clock, weather, calendar, keyboard layout, indicators. Right: tray, audio, agents, updates, Bluetooth, network, monitor, power, resources.
 

@@ -9,8 +9,9 @@ BarWidget {
   property int errors: 0
   property bool checked: false
   property string details: "Checking for software updates…"
-  implicitWidth: button.implicitWidth
-  implicitHeight: button.implicitHeight
+  visible: count > 0
+  implicitWidth: visible ? button.implicitWidth : 0
+  implicitHeight: visible ? button.implicitHeight : 0
 
   function refresh() {
     if (!checker.running) checker.running = true
