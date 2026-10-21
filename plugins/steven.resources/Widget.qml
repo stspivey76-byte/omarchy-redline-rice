@@ -48,8 +48,8 @@ BarWidget {
           : root.metrics.levels[index] || 0))
         readonly property real level: Math.max(0.04, usage)
         readonly property bool critical: !network && usage >= 0.95
-        readonly property color energy: network ? "#FF8C42" : critical ? "#C1121F"
-          : usage >= 0.8 ? "#FF453A" : usage >= 0.5 ? "#FFBF47" : "#FF8C42"
+        readonly property color energy: network ? "#ff425d" : critical ? "#c1122b"
+          : usage >= 0.8 ? "#ff3a57" : usage >= 0.5 ? "#ff4762" : "#ff425d"
         readonly property real offset: index < 3 ? index * 12 : 36 + (index - 3) * 4
         width: root.vertical ? display.width : Style.space(network ? 3 : 7)
         height: root.vertical ? Style.space(network ? 3 : 7) : display.height

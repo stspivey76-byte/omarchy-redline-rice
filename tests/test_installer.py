@@ -106,7 +106,7 @@ class InstallerTests(unittest.TestCase):
             self.assertTrue(gtk.read_text().endswith(original))
             if profile == "omarchy":
                 self.assertTrue((config / "omarchy/plugins/steven.bar/Bar.qml").exists())
-                self.assertEqual(len(list((config / "omarchy/plugins").iterdir())), 9)
+                self.assertEqual(len(list((config / "omarchy/plugins").iterdir())), 10)
                 if env.get("WAYLAND_DISPLAY") or env.get("DISPLAY"):
                     calls = [json.loads(line) for line in (base / "tools.jsonl").read_text().splitlines()]
                     self.assertIn(["omarchy", "restart", "shell"], calls)

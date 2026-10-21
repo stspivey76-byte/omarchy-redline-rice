@@ -35,7 +35,7 @@ BarWidget {
       textFormat: Text.PlainText
       anchors.verticalCenter: parent.verticalCenter
       text: root.playIcon
-      color: activePlayer && activePlayer.isPlaying ? "#57ed98" : "#409965"
+      color: activePlayer && activePlayer.isPlaying ? "#ed576d" : "#99404d"
       font.family: root.bar.fontFamily
       font.pixelSize: Style.font.body
       Behavior on color {
@@ -56,7 +56,7 @@ BarWidget {
         id: labelText
         textFormat: Text.PlainText
         text: root.title + (root.artist ? "  ·  " + root.artist : "")
-        color: "#57ed98"
+        color: "#ed576d"
         font.family: root.bar.fontFamily
         font.pixelSize: Style.font.body
         anchors.verticalCenter: parent.verticalCenter

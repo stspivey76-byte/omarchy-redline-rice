@@ -1258,7 +1258,7 @@ Item {
       color: root.transparent ? "transparent" : root.background
       radius: 9
       border.width: root.transparent ? 0 : 1
-      border.color: "#50e8f4ff"
+      border.color: "#50ffe8eb"
     }
     surfaceFormat.opaque: false
     WlrLayershell.namespace: "omarchy-bar"
@@ -1847,12 +1847,12 @@ Item {
       width: 28
       height: 4
       radius: 2
-      color: "#493035"
+      color: "#493034"
       Rectangle {
         width: parent.width * Math.min(1, slot.activeItem && slot.activeItem.outputVolume !== undefined ? slot.activeItem.outputVolume : 0)
         height: parent.height
         radius: 2
-        color: "#FF8C42"
+        color: "#ff425d"
       }
     }
 

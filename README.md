@@ -1,6 +1,12 @@
 # Redline Rice
 
-Steven’s Omarchy ricing bundle: **taskbar, nine shell plugins, six matching theme colors, Tux wallpapers, Fastfetch, and terminal settings**. This is a separate distribution of [Redline Desktop](https://github.com/stspivey76-byte/omarchy-redline-desktop), with terminal configuration added.
+Steven’s Omarchy ricing bundle: **taskbar, ten shell plugins, six matching theme colors, Tux wallpapers, Fastfetch, and terminal settings**. This is a separate distribution of [Redline Desktop](https://github.com/stspivey76-byte/omarchy-redline-desktop), with terminal configuration added.
+
+## Current taskbar layout
+
+The transparent top bar uses Steven’s custom audio widget (volume, output selection, and per-app mixer). Resource meters sit at the far right after power. The spectrum falls to zero when silent. The exported shell styling and plugin accents match the current red setup and are recolored by the six-color picker.
+
+Left: workspaces, active window, spectrum, media. Center: clock, weather, calendar, keyboard layout, indicators. Right: tray, audio, agents, updates, Bluetooth, network, monitor, power, resources.
 
 ## Terminal setup
 
@@ -48,7 +54,7 @@ REDLINE DESKTOP — Same desktop. Choose your color.
 4  Yellow    5  Pink       6  Purple
 ```
 
-Enter keeps your saved choice (red for a first install); `q` cancels before installation. All six options keep the same nine plugins, layout, and Tux/eclipse wallpaper design. The chosen color applies to the taskbar text, workspace pills, spectrum, resource meters, volume accents, media clone, popups, GTK styling, KDE scheme, and Fastfetch logo/layout. The matching wallpaper is selected automatically on desktops with wallpaper adapters. Other sessions receive the selected wallpaper file for manual application. Native third-party tray icons can retain their application's own artwork.
+Enter keeps your saved choice (red for a first install); `q` cancels before installation. All six options keep the same ten plugins, layout, and Tux/eclipse wallpaper design. The chosen color applies to the taskbar text, workspace pills, spectrum, resource meters, volume accents, media clone, popups, GTK styling, KDE scheme, and Fastfetch logo/layout. The matching wallpaper is selected automatically on desktops with wallpaper adapters. Other sessions receive the selected wallpaper file for manual application. Native third-party tray icons can retain their application's own artwork.
 
 ![Blue eclipse wallpaper](theme/backgrounds/tux-blue-eclipse.png)
 
@@ -99,7 +105,7 @@ Detection uses `XDG_CURRENT_DESKTOP`, `XDG_SESSION_DESKTOP`, and `DESKTOP_SESSIO
 
 | Active desktop/profile | Applied automatically |
 | --- | --- |
-| Omarchy on Hyprland | Full original theme, wallpaper, nine shell plugins, bar layout, idle settings, GTK colors, Fastfetch |
+| Omarchy on Hyprland | Full original theme, wallpaper, ten shell plugins, bar layout, idle settings, GTK colors, Fastfetch |
 | GNOME / Budgie | GTK colors, dark preference, wallpaper (including GNOME dark variant), Fastfetch |
 | KDE Plasma | Native Redline color scheme for Plasma/Qt apps such as Dolphin, wallpaper, GTK colors, Fastfetch |
 | Xfce | GTK colors, dark GTK theme, wallpaper for existing monitor/workspace properties, Fastfetch |
@@ -139,7 +145,7 @@ Profiles: `auto`, `omarchy`, `gnome`, `kde`, `xfce`, `cinnamon`, `mate`, `budgie
 - Original crimson Tux wallpaper, matching blue/green/yellow/pink/purple variants, and the black background.
 - Custom Omarchy Eclipse Fastfetch logo and red/orange information layout. Outside Omarchy, its Omarchy-specific probes are replaced with portable Fastfetch modules.
 - Omarchy color palette, shell styling, top bar, and idle settings (screensaver at 150 seconds, lock at 300).
-- Nine Omarchy plugins: bar, workspaces, active window, clock/calendar, weather, resources, spectrum, updates, and media. The saved Omarchy layout uses the built-in media widget.
+- Ten Omarchy plugins: bar, workspaces, active window, clock/calendar, weather, resources, spectrum, updates, media, and audio. The saved Omarchy layout uses the built-in media widget.
 
 For the full Omarchy profile, use a compatible Quickshell-based Omarchy shell/plugin API. Python 3 powers resource meters and update checks. Spectrum needs `pactl` and `parec` (Arch package `libpulse`). Weather uses `curl`, Open-Meteo, and wttr.in. Update checks use installed tools such as `checkupdates`, `yay`, `mise`, `flatpak`, and `fwupdmgr`.
 

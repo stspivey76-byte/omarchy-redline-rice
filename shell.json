@@ -46,10 +46,7 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "steven.resources"
-        },
-        {
-          "id": "omarchy.audio"
+          "id": "steven.audio"
         },
         {
           "id": "omarchy.agents"
@@ -68,6 +65,9 @@
         },
         {
           "id": "omarchy.power"
+        },
+        {
+          "id": "steven.resources"
         }
       ]
     },

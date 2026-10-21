@@ -44,7 +44,7 @@ BarWidget {
           width: parent.width + 8
           height: 17
           radius: height / 2
-          color: "#ff791f"
+          color: "#ff1f40"
           opacity: parent.focused ? 0.14 : 0
           Behavior on opacity { NumberAnimation { duration: 150 } }
         }
@@ -53,7 +53,7 @@ BarWidget {
           width: parent.width + 4
           height: 13
           radius: height / 2
-          color: "#ff982f"
+          color: "#ff2f4d"
           opacity: parent.focused ? 0.3 : 0
           Behavior on opacity { NumberAnimation { duration: 150 } }
         }
@@ -62,7 +62,7 @@ BarWidget {
           width: parent.width
           height: 9
           radius: height / 2
-          color: parent.focused ? "#ff982f" : parent.occupied ? "#eaa16c" : "#701d25"
+          color: parent.focused ? "#ff2f4d" : parent.occupied ? "#ea6c7e" : "#701d29"
           opacity: 1
           Behavior on color { ColorAnimation { duration: 150 } }
         }

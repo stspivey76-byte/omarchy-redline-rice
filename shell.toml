@@ -1,8 +1,8 @@
 
 [bar]
-background = "#0c0709"
+background = "#0c0708"
 background-alpha = 1.0
-text = "#ff493b"
+text = "#ff3b57"
 active = "#d51b36"
 scale-with-font = false
 size-horizontal = 24
@@ -11,25 +11,25 @@ status-slot = 20
 icon-font = 11
 
 [popups]
-background = "#0c0709"
+background = "#0c0708"
 background-alpha = 1.0
 border = "#d51b36"
 border-alpha = 0.8
 
 [notifications]
-background = "#0c0709"
+background = "#0c0708"
 background-alpha = 1.0
 border = "#d51b36"
 border-alpha = 0.8
 
 [menu]
-background = "#0c0709"
+background = "#0c0708"
 background-alpha = 1.0
 border = "#d51b36"
 border-alpha = 0.8
 
 [launcher]
-background = "#0c0709"
+background = "#0c0708"
 background-alpha = 1.0
 border = "#d51b36"
 border-alpha = 0.8

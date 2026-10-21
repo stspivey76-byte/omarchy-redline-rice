@@ -41,7 +41,7 @@ class PaletteTests(unittest.TestCase):
                     image = "tux-crimson-eclipse.png" if color == "red" else f"tux-{color}-eclipse.png"
                     self.assertEqual((staged / "theme/backgrounds/tux-crimson-eclipse.png").read_bytes(), (SOURCE / "theme/backgrounds" / image).read_bytes())
                     self.assertEqual((staged / "shell.json").read_bytes(), (SOURCE / "shell.json").read_bytes())
-                    self.assertEqual(len(list((staged / "plugins").iterdir())), 9)
+                    self.assertEqual(len(list((staged / "plugins").iterdir())), 10)
                     seed = palette.COLORS[color][1:]
                     hue = colorsys.rgb_to_hsv(*(int(seed[i:i + 2], 16) / 255 for i in (0, 2, 4)))[0]
                     for original in (SOURCE / "plugins").rglob("*.qml"):
