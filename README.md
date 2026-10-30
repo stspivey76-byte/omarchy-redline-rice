@@ -18,7 +18,7 @@ cd omarchy-redline-rice
 python3 scripts/install-terminal.py
 ```
 
-Includes Alacritty, Foot, Ghostty, and Kitty configs. Alacritty, Foot, and Ghostty use JetBrainsMono Nerd Font at size 9 with 14-pixel padding; Kitty follows Omarchy defaults. Theme colors follow the active Omarchy theme. The fixed red Foot override from the original desktop was removed so all six colors can work. Install your preferred terminal and font separately. These configs require Omarchy; the shared theme supports the other desktop profiles listed below.
+Includes Steven’s current **Powerline Starship prompt**: crimson username, muted rose directory, dark rose/black separators, a 24-hour clock, and a second-line command indicator. The prompt keeps these colors independently of the desktop color picker. Also includes Alacritty, Foot, Ghostty, and Kitty configs. Alacritty, Foot, and Ghostty use JetBrainsMono Nerd Font at size 9 with 14-pixel padding; Kitty follows Omarchy defaults. Theme colors follow the active Omarchy theme. The fixed red Foot override from the original desktop was removed so all six colors can work. Install your preferred terminal, Starship, and font separately. Omarchy already initializes Starship; other shell startup files are never overwritten. If you set `STARSHIP_CONFIG`, point it to `~/.config/starship.toml` (or the corresponding XDG config path). These configs require Omarchy; the shared theme supports the other desktop profiles listed below.
 
 The terminal installer backs up existing files and prints an exact restore command. Open a new terminal window afterward. Fastfetch configuration is installed with the theme; run `fastfetch` to display it. No shell startup files or command history are exported.
 

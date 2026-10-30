@@ -47,4 +47,5 @@ for file in sorted(source.rglob('*')):
     shutil.copy2(file, target)
 print(f'Terminal settings installed. Backup: {backup}')
 print(f'Restore: python3 {Path(__file__).resolve()} --restore {backup}')
-print('Open a new terminal window to apply. Install JetBrainsMono Nerd Font separately if needed.')
+print('Open a new terminal window to apply. Requires Starship and JetBrainsMono Nerd Font.')
+print('Omarchy initializes Starship automatically; a custom STARSHIP_CONFIG must point to the installed starship.toml.')

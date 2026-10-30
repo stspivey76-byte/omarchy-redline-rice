@@ -1,0 +1,28 @@
+# Powerline prompt inspired by the reference screenshot.
+add_newline = true
+command_timeout = 200
+format = """
+$username[](fg:#d51b36 bg:#a34b58)$directory[](fg:#a34b58 bg:#704c51)[](fg:#704c51 bg:#211012)[](fg:#211012) $time$line_break$character"""
+
+[username]
+show_always = true
+style_user = "bold fg:#f3eff0 bg:#d51b36"
+style_root = "bold fg:#f3eff0 bg:#d51b36"
+format = "[  $user ]($style)"
+
+[directory]
+style = "bold fg:#f3eff0 bg:#a34b58"
+format = "[ $path ]($style)"
+truncation_length = 2
+truncation_symbol = "…/"
+home_symbol = "~"
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bold fg:#c8c1c3"
+format = "[󰥔 $time]($style)"
+
+[character]
+success_symbol = "[❯](bold #d51b36)"
+error_symbol = "[❯](bold #fa3c58)"
